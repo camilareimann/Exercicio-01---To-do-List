@@ -1,0 +1,126 @@
+body {
+    margin-top: 60px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #EDF0FF;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    margin-bottom: 10px;
+    color:#1C31A5;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.novoItem{
+    font-size: 16px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    text-align: center;
+}
+
+.area-form {
+    width: 100%;
+    max-width: 800px;
+    min-width: 300px;
+    padding: 30px;
+    background-color: #1C31A5;
+    border-radius: 20px;
+    color: white;
+}
+
+.area-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.areaAdd {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+input{
+    margin-left: 10px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.checkboxArea {
+    margin-right: 10px;
+    display: flex;
+}
+
+/*hide square checkbox*/
+.checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Custom style for circular checkbox */
+.checkbox-label {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%; /* Makes it circular */
+    border: 2px solid white;
+}
+
+/* Style when checkbox is checked */
+.checkbox:checked + .checkbox-label::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.remover {
+    background-color: white;
+    color: #1C31A5;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#novoItem{
+    background-color: white;
+    color: #1C31A5;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
