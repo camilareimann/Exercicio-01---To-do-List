@@ -75,7 +75,7 @@ li {
     display: flex;
 }
 
-/*hide square checkbox*/
+/*esconder os quadrados*/
 .checkbox {
     position: absolute;
     opacity: 0;
@@ -83,18 +83,16 @@ li {
     height: 0;
 }
 
-/* Custom style for circular checkbox */
 .checkbox-label {
     position: relative;
     display: inline-block;
     width: 20px;
     height: 20px;
     margin-right: 10px;
-    border-radius: 50%; /* Makes it circular */
+    border-radius: 50%; 
     border: 2px solid white;
 }
 
-/* Style when checkbox is checked */
 .checkbox:checked + .checkbox-label::after {
     content: '';
     position: absolute;
