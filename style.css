@@ -111,14 +111,23 @@ li {
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 
+.remover:hover {
+    transform: scale(1.2);
+}
 
-#novoItem{
+#adicionar{
     background-color: white;
     color: #1C31A5;
     border: none;
     padding: 7px 20px;
     border-radius: 5px;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#adicionar:hover {
+    transform: scale(1.2);
 }
