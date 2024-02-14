@@ -1,18 +1,12 @@
 body {
     margin-top: 60px;
+    margin-bottom: 60px;
     padding: 0;
     display: flex;
     justify-content: center;
     height: 100vh;
     background-color: #EDF0FF;
     font-family: 'Poppins', sans-serif;
-}
-
-h1{
-    margin-bottom: 10px;
-    color:#1C31A5;
-    font-size: 32px;
-    font-weight: 700;
 }
 
 .novoItem{
@@ -25,8 +19,15 @@ h1{
     align-items: center;
 }
 
-header{
-    text-align: center;
+header{ 
+    display: flex;
+    justify-content: center;
+}
+
+.todolist-logo{
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 0 70px 0;
 }
 
 .area-form {
@@ -34,9 +35,11 @@ header{
     max-width: 800px;
     min-width: 300px;
     padding: 30px;
-    background-color: #1C31A5;
+    background-color: #ff9060;
     border-radius: 20px;
-    color: white;
+    color: #ffffff;
+    box-shadow: -20px 20px 0px 0px #47259b;
+    font-weight: 600;
 }
 
 .area-form form {
@@ -49,11 +52,37 @@ header{
     display: flex;
     justify-content: space-between;
     height: auto;
+    align-items: center;
     margin-bottom: 20px;
 }
 
-input{
+#inputNovoItem{
     margin-left: 10px;
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.checkbox{
+    margin-right: 10px;
+    appearance: none;
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid #47259b;
+    border-radius: 4px;
+    outline: none; 
+}
+
+.checkbox:checked{
+    content: ;
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    background-color: #47259b; 
+    border-radius: 4px; 
+    text-align: center; 
+    line-height: 20px; 
+    color: #fff; 
 }
 
 ul {
@@ -66,47 +95,20 @@ li {
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
-.checkboxArea {
-    margin-right: 10px;
+.inputs{
     display: flex;
-}
-
-/*esconder os quadrados*/
-.checkbox {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.checkbox-label {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    border-radius: 50%; 
-    border: 2px solid white;
-}
-
-.checkbox:checked + .checkbox-label::after {
-    content: '';
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: white;
+    align-items: center;
 }
 
 .remover {
     background-color: white;
-    color: #1C31A5;
+    font-weight: 900;
+    color: #ff9060;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -114,20 +116,31 @@ li {
     transition: all .2s ease-in-out;
 }
 
-.remover:hover {
-    transform: scale(1.2);
+button:hover {
+    background-color: #47259b;
+    color: #ff9060;
+    cursor: pointer;
 }
 
-#adicionar{
-    background-color: white;
-    color: #1C31A5;
+
+
+#addNovoItem{
+    background-color: #47259b;
+    font-weight: 900;
+    color: #ffffff;
     border: none;
-    padding: 7px 20px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 7px;
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
 
-#adicionar:hover {
-    transform: scale(1.2);
+#addNovoItem:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.checked .txtItem {
+    text-decoration: line-through;
+    color: #47259b;
 }
