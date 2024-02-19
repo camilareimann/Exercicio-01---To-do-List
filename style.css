@@ -1,6 +1,8 @@
+*{
+  box-sizing: border-box;
+}
 body {
-    margin-top: 60px;
-    margin-bottom: 60px;
+margin:60px;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -55,11 +57,13 @@ header{
     align-items: center;
     margin-bottom: 20px;
 }
+.tituloNovoItem{
+    margin-right: 10px;
+}
 
 #inputNovoItem{
-    margin-left: 10px;
     border: none;
-    height: 25px;
+    height: 30px;
     border-radius: 5px;
 }
 
@@ -74,7 +78,6 @@ header{
 }
 
 .checkbox:checked{
-    content: ;
     display: inline-block;
     width: 20px; 
     height: 20px; 
@@ -122,8 +125,6 @@ button:hover {
     cursor: pointer;
 }
 
-
-
 #addNovoItem{
     background-color: #47259b;
     font-weight: 900;
@@ -132,6 +133,7 @@ button:hover {
     padding: 10px 20px;
     border-radius: 7px;
     cursor: pointer;
+    margin-left: 30px;
     transition: all .2s ease-in-out;
 }
 
@@ -143,4 +145,46 @@ button:hover {
 .checked .txtItem {
     text-decoration: line-through;
     color: #47259b;
+}
+
+@media only screen and (max-width: 600px) {
+    .areaAdd {
+        flex-direction: column;
+    }
+
+    .coluna-input {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+
+    #inputNovoItem {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    #addNovoItem{
+        background-color: #47259b;
+        font-weight: 900;
+        font-size: 18px;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 7px;
+        cursor: pointer;
+        margin-left: 30px;
+        transition: all .2s ease-in-out;
+    }
+    
+    #addNovoItem:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .tituloNovoItem{
+        margin-bottom: 5px;
+    }
+
 }
