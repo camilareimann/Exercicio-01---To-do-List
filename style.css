@@ -149,6 +149,11 @@ button:hover {
     color: #47259b;
 }
 
+#contadorItens {
+    margin-top: 30px;
+    font-size: 12px;
+}
+
 @media only screen and (max-width: 800px) {
     .areaAdd {
         flex-direction: column;
@@ -188,11 +193,6 @@ button:hover {
 
     .tituloNovoItem {
         margin-bottom: 5px;
-    }
-
-    #contadorItens {
-        margin-top: 20px;
-        font-size: 12px;
     }
 
 }
