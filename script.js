@@ -52,7 +52,7 @@ function removerItem(novoItem) {
     overlay.style.display = 'block';
 
     const modal = document.querySelector(".js-modal");
-    modal.innerHTML = '<div class="modal-content"><p>Do you want to delete this item?</p><button id="confirmDelete">Yes</button><button id="cancelDelete">No</button></div>';
+    modal.innerHTML = '<div class="modal-content"><p>Tem certeza que quer excluir?</p><button id="confirmDelete">Sim</button><button id="cancelDelete">Não</button></div>';
 
     modal.style.display = 'block';
 
@@ -75,9 +75,6 @@ function removerItem(novoItem) {
     });
 
 }
-
-
-
 
 function atualizarContador() {
     let numeroItens = document.getElementById('listaAtividades').getElementsByTagName('li').length;
