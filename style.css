@@ -155,6 +155,9 @@ button:hover {
 }
 
 @media only screen and (max-width: 800px) {
+    #container{
+        padding: 10px;
+    }
     .areaAdd {
         flex-direction: column;
     }
